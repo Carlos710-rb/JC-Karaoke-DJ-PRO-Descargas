@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="JC Karaoke DJ PRO, sistema profesional de karaoke para Windows con biblioteca inteligente, cola de cantantes y control móvil.">
+  <title>JC Karaoke DJ PRO | Licencia permanente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="logo">🎤 JC <span>KARAOKE DJ PRO</span></div>
+  <nav><a href="#funciones">Funciones</a><a href="#licencia">Licencia</a><a href="#preguntas">Preguntas</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">KARAOKE PROFESIONAL PARA WINDOWS</p>
+      <h1>Tu fiesta. Tu escenario. Todo bajo control.</h1>
+      <p class="lead">Organiza miles de canciones, controla los turnos de los cantantes, proyecta el video y maneja el karaoke desde el celular.</p>
+      <div class="actions">
+        <a id="downloadTop" class="btn primary" href="#">⬇ Descargar programa</a>
+        <a id="whatsappTop" class="btn" target="_blank" rel="noopener">💬 Comprar licencia</a>
+      </div>
+      <p class="mini">El programa requiere una licencia permanente para funcionar. Sin mensualidades.</p>
+    </div>
+    <div class="mock">
+      <div class="screen"><span>AHORA CANTA</span><strong>Tu cliente</strong><small>La canción elegida</small></div>
+      <div class="stats"><div><b>∞</b><small>Canciones</small></div><div><b>📱</b><small>Control móvil</small></div><div><b>PRO</b><small>Licencia</small></div></div>
+    </div>
+  </section>
+
+  <section id="funciones" class="section">
+    <p class="eyebrow">TODO EN UN SOLO PROGRAMA</p><h2>Hecho para fiestas, eventos y negocios</h2>
+    <div class="grid">
+      <article><h3>📚 Biblioteca inteligente</h3><p>Escanea tus carpetas, encuentra nuevas canciones y conserva la numeración.</p></article>
+      <article><h3>🎤 Cola de cantantes</h3><p>Agrega nombres, organiza turnos y muestra claramente quién canta ahora y quién sigue.</p></article>
+      <article><h3>📺 Pantalla para el público</h3><p>Envía el video a un televisor o proyector en pantalla completa.</p></article>
+      <article><h3>📱 Control desde el celular</h3><p>Busca canciones, agrega turnos, cambia volumen y controla la reproducción por Wi-Fi.</p></article>
+      <article><h3>🎚 Modo DJ</h3><p>Reproducción continua, transiciones suaves y controles rápidos para mantener la fiesta.</p></article>
+      <article><h3>⭐ Favoritos e historial</h3><p>Encuentra rápidamente las canciones más utilizadas y revisa lo reproducido.</p></article>
+    </div>
+  </section>
+
+  <section id="licencia" class="section license-section">
+    <div class="license-card">
+      <p class="eyebrow">UN SOLO PAGO</p>
+      <h2>Licencia permanente</h2>
+      <div id="price" class="price">Consultar precio</div>
+      <ul><li>Programa completo</li><li>Activación permanente</li><li>Una computadora por licencia</li><li>Sin pagos mensuales</li><li>Soporte por WhatsApp</li></ul>
+      <a id="whatsappBuy" class="btn primary wide" target="_blank" rel="noopener">💬 Comprar por WhatsApp</a>
+      <a id="downloadBuy" class="btn wide" href="#">⬇ Descargar instalador</a>
+    </div>
+    <div class="steps">
+      <h2>¿Cómo funciona?</h2>
+      <ol><li>Descarga e instala el programa.</li><li>Escríbenos por WhatsApp para comprar.</li><li>Después de confirmar el pago recibirás una licencia.</li><li>Introduce la licencia una sola vez.</li><li>El programa queda activado permanentemente en ese equipo.</li></ol>
+    </div>
+  </section>
+
+  <section id="preguntas" class="section faq">
+    <p class="eyebrow">PREGUNTAS FRECUENTES</p><h2>Todo claro antes de comprar</h2>
+    <details><summary>¿La licencia vence?</summary><p>No. Es una licencia permanente para el equipo donde se activa.</p></details>
+    <details><summary>¿Necesita Internet?</summary><p>Solo durante la activación inicial. Después puede utilizarse sin conexión.</p></details>
+    <details><summary>¿Puedo usar la misma licencia en otra computadora?</summary><p>La licencia es para una computadora. Si cambias de equipo, contáctanos para liberar la activación anterior.</p></details>
+    <details><summary>¿Hay versión de prueba?</summary><p>No. Se descarga el programa completo y se activa con la licencia adquirida.</p></details>
+  </section>
+</main>
+<footer>© 2026 JC Karaoke DJ PRO · Desarrollado por Juan Carlos Romero</footer>
+<script>
+(()=>{
+  const whatsapp='59167858578';
+  const price='Consultar por WhatsApp';
+  const download='https://github.com/Carlos710-rb/JC-Karaoke-DJ-PRO-3/releases/latest/download/JC-Karaoke-DJ-PRO-Setup.exe';
+  const message=encodeURIComponent('Hola, quiero comprar una licencia permanente de JC Karaoke DJ PRO.');
+  const wa=`https://wa.me/${whatsapp}?text=${message}`;
+  ['whatsappTop','whatsappBuy'].forEach(id=>document.getElementById(id).href=wa);
+  ['downloadTop','downloadBuy'].forEach(id=>document.getElementById(id).href=download);
+  document.getElementById('price').textContent=price;
+})();
+</script>
+</body>
+</html>
